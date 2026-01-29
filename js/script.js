@@ -4,7 +4,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let playerChoice = prompt("What do you choose? (rock, paper, scissors)");
+    let playerChoice = prompt("Open the console (F12) to see results! Choose: rock, paper, or scissors.");
     if (playerChoice === null) return ""; 
     
     return playerChoice.toLowerCase();
