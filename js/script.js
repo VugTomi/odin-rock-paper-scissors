@@ -41,9 +41,18 @@ function getComputerChoice() {
     return array[Math.floor(Math.random() * 3)];
 }
 
+<<<<<<< HEAD
 function playRound(humanChoice) {
     const computerChoice = getComputerChoice();
     let resultMessage = "";
+=======
+function getHumanChoice() {
+    let playerChoice = prompt("Open the console (F12) to see results! Choose: rock, paper, or scissors.");
+    if (playerChoice === null) return ""; 
+    
+    return playerChoice.toLowerCase();
+}
+>>>>>>> 935c24a6a8f5e700b01b0b1ae2ae4b49d2ad9ab6
 
     if (humanChoice === computerChoice) {
         resultMessage = `It's a tie! You both chosed ${humanChoice}`;
@@ -79,6 +88,7 @@ function checkWinner() {
     }
 }
 
+<<<<<<< HEAD
 function disableButtons(isDisabled) {
     rockBtn.disabled = isDisabled;
     paperBtn.disabled = isDisabled;
@@ -94,3 +104,6 @@ function resetGame() {
 
     resetBtn.style.display = "none";
 }
+=======
+playGame();
+>>>>>>> 935c24a6a8f5e700b01b0b1ae2ae4b49d2ad9ab6
